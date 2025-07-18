@@ -3,7 +3,7 @@ layout: post
 title: "Host & Network Penetration Testing: The Metasploit Framework CTF 2 - Complete Walkthrough"
 date: 2025-07-18
 categories: [Write-Ups,eJPT]
-tags: [ejpt, ine, metasploit, rsync, web-exploitation, privilege-escalation]
+tags: [ejpt, ine, metasploit, rsync, web-exploitation, privilege-escalation,ctf]
 description: "A comprehensive guide to solving the Metasploit Framework CTF 2 challenge with detailed explanations, hints, and practical examples for EJPT preparation."
 ---
 
