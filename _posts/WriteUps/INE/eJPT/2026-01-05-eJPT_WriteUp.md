@@ -4,6 +4,7 @@ title: "eJPT Certification: How I managed to Pass the eJPT exam"
 date: 2026-01-05
 categories: [Certifications, Penetration Testing]
 tags: [ejpt, infosec, pentesting, writeup]
+description: How I passed the eJPT certification in six hours - what the exam actually tests, why it isn't a CTF, and the enumeration habits that made the difference.
 ---
 
 ![eJPT Certificate](/images/Certificates/ejpt.png)
